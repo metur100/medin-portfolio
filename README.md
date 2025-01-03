@@ -52,7 +52,7 @@ portfolio-project/
 ├── css/              # CSS files for styling
 ├── js/               # JavaScript files
 ├── images/           # Images and icons
-├── cv/               # Folder for resume PDF
+├── cv.pdf            #  Resume PDF
 └── README.md         # Project documentation
 ```
 
