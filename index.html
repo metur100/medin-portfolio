@@ -50,6 +50,7 @@
 			</div>
 		</div>
 	</nav>
+
 	<section id="home-section" class="hero">
 		<div class="home-slider  owl-carousel">
 			<div class="slider-item ">
@@ -387,7 +388,7 @@
 				</div>
 				<div class="col-md-6 animate-box">
 					<div class="progress-wrap ftco-animate">
-						<h3>Android & Mobile Development</h3>
+						<h3>Android Development</h3>
 						<div class="progress">
 							<div class="progress-bar color-2" role="progressbar" aria-valuenow="87" aria-valuemin="0"
 								aria-valuemax="100" style="width:87%">
@@ -731,6 +732,18 @@
 				});
 		}
 	</script>
+
+<script>
+    document.querySelectorAll('.navbar-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbar = document.querySelector('.navbar-collapse');
+            if (navbar.classList.contains('show')) {
+                navbar.classList.remove('show');  // Close menu
+            }
+        });
+    });
+</script>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
