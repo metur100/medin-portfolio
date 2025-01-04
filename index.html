@@ -137,7 +137,7 @@
 							</p>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -149,8 +149,10 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Resume</h1>
 					<h2 class="mb-4">My Professional Journey</h2>
-					<p>Explore my career path, from achievements to hands-on experience in software development, cloud technologies, and IT support. This resume highlights the skills, projects, and certifications that shape who I am as a developer and problem solver.</p>
-				</div>				
+					<p>Explore my career path, from achievements to hands-on experience in software development, cloud
+						technologies, and IT support. This resume highlights the skills, projects, and certifications
+						that shape who I am as a developer and problem solver.</p>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
@@ -278,7 +280,7 @@
 						</div>
 					</a>
 				</div>
-				
+
 				<div class="col-md-4 text-center d-flex ftco-animate">
 					<a href="#" class="services-1">
 						<span class="icon">
@@ -405,7 +407,9 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
 					<h2 class="mb-4">My Projects</h2>
-					<p>Explore a collection of projects showcasing my expertise in full-stack development, cloud solutions, API integration, and automation. Each project highlights innovative problem-solving, modern technologies, and user-centric design.</p>
+					<p>Explore a collection of projects showcasing my expertise in full-stack development, cloud
+						solutions, API integration, and automation. Each project highlights innovative problem-solving,
+						modern technologies, and user-centric design.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -534,10 +538,11 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Contact</h1>
 					<h2 class="mb-4">Get in Touch</h2>
-					<p>If you have a project in mind, need technical expertise, or just want to connect, feel free to reach out. I'm always open to new opportunities and collaborations.</p>
+					<p>If you have a project in mind, need technical expertise, or just want to connect, feel free to
+						reach out. I'm always open to new opportunities and collaborations.</p>
 				</div>
 			</div>
-			
+
 			<div class="row d-flex contact-info mb-5 justify-content-center">
 				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
@@ -567,29 +572,29 @@
 					</div>
 				</div>
 			</div>
-			
+
 
 			<div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<form id="contact_form" action="#" class="bg-light p-4 p-md-5 contact-form"
+						onsubmit="sendEmail(event)">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name">
+							<input type="text" id="your_name" class="form-control" placeholder="Your Name" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
+							<input type="email" id="email" class="form-control" placeholder="Your Email" required>
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject">
+							<input type="text" id="subject" class="form-control" placeholder="Subject">
 						</div>
 						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="7" class="form-control"
-								placeholder="Message"></textarea>
+							<textarea id="message" cols="30" rows="7" class="form-control" placeholder="Message"
+								required></textarea>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
 						</div>
 					</form>
-
 				</div>
 
 				<div class="col-md-6 d-flex">
@@ -606,14 +611,19 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">About</h2>
-						<p>I'm a passionate Full-Stack Software Developer with expertise in cloud solutions, API development, and CI/CD pipelines. I thrive on building scalable applications and crafting efficient digital solutions using technologies like Azure, .NET, React, and SQL.</p>
+						<p>I'm a passionate Full-Stack Software Developer with expertise in cloud solutions, API
+							development, and CI/CD pipelines. I thrive on building scalable applications and crafting
+							efficient digital solutions using technologies like Azure, .NET, React, and SQL.</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://github.com/metur100"><span class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.facebook.com/medin.turkes"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/medin-turkes-94182936/"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/metur100"><span
+										class="icon-github"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/medin.turkes"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/medin-turkes-94182936/"><span
+										class="icon-linkedin"></span></a></li>
 						</ul>
 					</div>
-					
+
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4 ml-md-4">
@@ -631,11 +641,14 @@
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Services</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Full-Stack Development</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cloud Solutions (Azure)</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Full-Stack Development</a>
+							</li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cloud Solutions (Azure)</a>
+							</li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>API Development</a></li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>CI/CD & DevOps</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Database Management (MS SQL Server)</a></li>							
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Database Management (MS SQL
+									Server)</a></li>
 						</ul>
 					</div>
 				</div>
@@ -644,8 +657,10 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">Essen, Germany</span></li>
-								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+4915757099666</span></a></li>
+								<li><span class="icon icon-map-marker"></span><span class="text">Essen, Germany</span>
+								</li>
+								<li><a href="#"><span class="icon icon-phone"></span><span
+											class="text">+4915757099666</span></a></li>
 								<li><a href="#"><span class="icon icon-envelope"></span><span
 											class="text">medinturkes@gmail.com</span></a></li>
 							</ul>
@@ -666,13 +681,56 @@
 
 
 
-	<!-- loader -->
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
 
+	<script>
+		function sendEmail(event) {
+			event.preventDefault();
+
+			const formData = {
+				full_name: document.getElementById('your_name').value,
+				email: document.getElementById('email').value,
+				subject: document.getElementById('subject').value || 'No subject',
+				message: document.getElementById('message').value
+			};
+
+			const payload = {
+				service_id: "service_l8sv3gs",
+				template_id: "template_zpvz5lt",
+				user_id: "0-BO2wZ5z6OzbxUGf",
+				template_params: formData
+			};
+
+			fetch("https://api.emailjs.com/api/v1.0/email/send", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify(payload)
+			})
+				.then(response => {
+					if (response.ok) {
+						alert("Thank you for your contact! Your message is sent to me!");
+						document.getElementById("contact_form").reset();
+					} else {
+						return response.json().then(err => {
+							console.error('Error by sending message:', err);
+							alert("Error by sending message. Please try again.");
+						});
+					}
+				})
+				.catch(error => {
+					console.error("Error:", error);
+					alert("Error by sending message. Please try again.");
+				});
+		}
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
