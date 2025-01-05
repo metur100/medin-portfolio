@@ -33,9 +33,13 @@
 		<div class="container">
 			<a class="navbar-brand" href="index.html">Medin</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"
+				style="color: white; border-color: white;">
+				<span class="oi oi-menu" style="color: white;"></span>
+				<span style="color: white;">Menu</span>
 			</button>
+
+
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
@@ -69,8 +73,9 @@
 								<h1 class="mb-4 mt-3">I'm <span>Medin Turkes</span></h1>
 								<h2 class="mb-4">A Full-Stack Software Developer</h2>
 								<p>
-									<a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> 
-									<a href="#projects-section"class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+									<a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
+									<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
+										works</a>
 								</p>
 							</div>
 						</div>
@@ -92,8 +97,10 @@
 							<div class="text">
 								<span class="subheading">Hello!</span>
 								<h1 class="mb-4 mt-3">I'm a <span>software developer</span> based in Germany</h1>
-								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a> 
-									<a href="#projects-section"class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
+									<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
+										works</a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -641,9 +648,12 @@
 						<ul class="list-unstyled">
 							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
 							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a>
+							</li>
+							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
+							</li>
+							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -740,16 +750,16 @@
 		}
 	</script>
 
-<script>
-    document.querySelectorAll('.navbar-nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            const navbar = document.querySelector('.navbar-collapse');
-            if (navbar.classList.contains('show')) {
-                navbar.classList.remove('show'); 
-            }
-        });
-    });
-</script>
+	<script>
+		document.querySelectorAll('.navbar-nav a').forEach(link => {
+			link.addEventListener('click', () => {
+				const navbar = document.querySelector('.navbar-collapse');
+				if (navbar.classList.contains('show')) {
+					navbar.classList.remove('show');
+				}
+			});
+		});
+	</script>
 
 
 	<script src="js/jquery.min.js"></script>
