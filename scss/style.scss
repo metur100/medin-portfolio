@@ -466,6 +466,7 @@ h1, h2, h3, h4, h5,
 						right: 0;
 						width: 1200px;
 						margin: 0 auto;
+						overflow-y: auto;
 					}
 					@include media-breakpoint-down(md){
 						width: 100%;
@@ -476,6 +477,7 @@ h1, h2, h3, h4, h5,
 						bottom: 0;
 						z-index: 1;
 						padding: 1em;
+						overflow-y: auto;
 					}
 					.text{
 						width: 100%;
@@ -489,6 +491,7 @@ h1, h2, h3, h4, h5,
 							max-width: 50%;
 							padding-left: 45px;
 							padding-right: 3em;
+							overflow-y: auto;
 						}
 					}
 				}

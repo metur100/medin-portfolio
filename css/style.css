@@ -4,6 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8481,10 +8483,11 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .slider-item .slider-text .one-forth {
           width: 50%;
           position: relative; }
-          @media (min-width: 768px) {
+          @media (min-width: 468px) {
             .owl-carousel.home-slider .slider-item .slider-text .one-forth {
               position: absolute;
               top: 0;
+              overflow-y: auto;
               left: 0;
               bottom: 0;
               right: 0;
@@ -8497,6 +8500,7 @@ h1, h2, h3, h4, h5,
               top: 0;
               left: 0;
               right: 0;
+              overflow-y: auto;
               bottom: 0;
               z-index: 1;
               padding: 1em; } }
