@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Employee Appraisal Web App</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="appraisal-app.html">Employee Appraisal Web App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span> Menu
+            </button>
+            
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="monethee-adventure.html" class="nav-link"><span>Next Project</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-details ftco-section">
+        <div class="container">
+            <div class="header-section">
+                <h1 class="animate__animated animate__fadeInDown">Employee Appraisal Web App</h1>
+                <p class="subheading">Streamlining Employee Evaluations and Goal Setting</p>
+            </div>
+
+            <div class="content-section">
+                <p>
+                    <strong>Employee Appraisal Web App</strong> is a cutting-edge solution designed to facilitate structured employee appraisals, goal-setting, and performance tracking. This web application enables HR departments to seamlessly manage appraisal records, define objectives, and provide feedback in an intuitive and secure environment.
+                </p>
+                
+                <img src="images/project-8.jpg" style="width: 100%; height: auto; max-width: 1200px; display: block; margin: 0 auto;">
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><i class="fas fa-users"></i> <strong>Employee Appraisal Management:</strong> Document and track employee performance reviews, including feedback from both employees and management.</li>
+                    <li><i class="fas fa-bullseye"></i> <strong>Goal Definition and Planning:</strong> Set measurable goals and objectives during appraisals, fostering growth and aligning personal development with company targets.</li>
+                    <li><i class="fas fa-calendar-check"></i> <strong>Meeting and Notification System:</strong> Automatically schedule meetings and send notifications to employees and supervisors upon status changes or new appraisals.</li>
+                    <li><i class="fas fa-chart-line"></i> <strong>Real-time Status Updates:</strong> Employees and managers receive real-time updates and progress reports through Azure Notification services.</li>
+                    <li><i class="fas fa-lock"></i> <strong>Secure Authentication:</strong> Integrated with <strong>Microsoft Entra ID (Azure AD)</strong> for secure user authentication, utilizing <strong>MSAL</strong> for seamless Single Sign-On (SSO).</li>
+                </ul>
+                
+                <h3>Technical Specifications:</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> <strong>Frontend:</strong> Developed using <strong>React</strong> and <strong>TypeScript</strong> for a fast and responsive single-page application (SPA).</li>
+                    <li><i class="fas fa-server"></i> <strong>Backend:</strong> Built with <strong>.NET Core (C#)</strong> and Azure Functions to handle employee data, manage appraisals, and perform server-side logic.</li>
+                    <li><i class="fas fa-cloud"></i> <strong>Infrastructure:</strong> Fully hosted on Azure resources, including SQL Database, Azure Functions, and App Services.</li>
+                    <li><i class="fas fa-database"></i> <strong>Data Access:</strong> Employee data is retrieved via <strong>Microsoft Graph API</strong> and stored in a centralized <strong>SQL Database</strong>.</li>
+                    <li><i class="fas fa-network-wired"></i> <strong>Data Communication:</strong> OData is used to communicate between the front end and SQL database, ensuring efficient data retrieval and updates.</li>
+                    <li><i class="fas fa-folder"></i> <strong>State Management:</strong> The application uses <strong>Zustand</strong> for lightweight, efficient global state management across the SPA.</li>
+                    <li><i class="fas fa-cogs"></i> <strong>Performance Optimization:</strong> Includes <strong>debouncing</strong> and optimized Axios requests to improve performance during API calls.</li>
+                </ul>
+
+                <h3>How It Works:</h3>
+                <ul>
+                    <li><i class="fas fa-user-shield"></i> Users log in via Microsoft Entra ID (Azure AD) and access appraisal records based on their role and permissions.</li>
+                    <li><i class="fas fa-file-signature"></i> Appraisals are conducted and stored digitally, with management feedback documented directly within the system.</li>
+                    <li><i class="fas fa-bell"></i> Employees and managers receive automated notifications for appraisal creation, status changes, and scheduled reviews.</li>
+                    <li><i class="fas fa-calendar-alt"></i> Appraisal meetings are added to Outlook calendars, streamlining the review process and ensuring all parties are notified.</li>
+                </ul>
+
+                <div class="cta-section">
+                    <p>
+                        <a href="index.html" class="btn btn-primary py-3 px-4">Back to Home</a>
+                        <a href="monethee-adventure.html" class="btn btn-white btn-outline-white py-3 px-4">Next Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
