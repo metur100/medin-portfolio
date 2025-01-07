@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>RealOrders - Internal Ordering System</title>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="realorders-app.html">RealOrders</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span> Menu
+            </button>
+            
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="monethee-adventure.html" class="nav-link"><span>Next Project</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-details ftco-section">
+        <div class="container">
+            <div class="header-section">
+                <h1 class="animate__animated animate__fadeInDown">RealOrders</h1>
+                <p class="subheading">Internal Ordering System for RealCore Group</p>
+            </div>
+
+            <div class="content-section">
+                <p>
+                    <strong>RealOrders</strong> is an internal ordering platform developed for the RealCore Group to streamline procurement of equipment, technology, and other essential resources. Designed to simplify the internal purchasing process, the system is integrated with Microsoft services to provide secure authentication and seamless interaction between employees and the procurement team.
+                </p>
+                
+                <img src="images/project-2.jpg" style="width: 100%; height: auto; max-width: 1200px; display: block; margin: 0 auto;">
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <strong>Internal Ordering Process:</strong> Employees can place orders for smartphones, laptops, accessories, and miscellaneous items through a structured and budget-controlled process.</li>
+                    <li><i class="fas fa-envelope"></i> <strong>Automated Email Notifications:</strong> Order approvals, rejections, and updates are handled via <strong>Azure Logic Apps</strong> to automate communication between managers and employees.</li>
+                    <li><i class="fas fa-cogs"></i> <strong>Interactive Adaptive Cards:</strong> Utilized for approvals and actions directly within emails and Microsoft Teams.</li>
+                    <li><i class="fas fa-user-shield"></i> <strong>Microsoft Entra ID Authentication:</strong> Secure login with Microsoft 365 (O365) accounts using Single Sign-On (SSO).</li>
+                    <li><i class="fas fa-cloud"></i> <strong>Azure Functions Backend:</strong> The backend is developed with <strong>C#</strong> to manage data, trigger workflows, and interact with APIs.</li>
+                    <li><i class="fas fa-user-tie"></i> <strong>Admin Center:</strong> A dedicated admin panel allows managers to review, approve, or modify employee orders and track expenditures.</li>
+                    <li><i class="fas fa-users"></i> <strong>Employee Data Integration:</strong> <strong>Microsoft Graph API</strong> is used to fetch employee information, ensuring smooth and accurate order processing.</li>
+                </ul>
+                
+                <h3>Technical Specifications:</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> <strong>Frontend Technologies:</strong> React + TypeScript for fast, component-driven UIs.</li>
+                    <li><i class="fas fa-server"></i> <strong>Backend:</strong> C# Azure Functions with HTTP triggers and event-driven logic.</li>
+                    <li><i class="fas fa-link"></i> <strong>Authentication:</strong> Microsoft Entra ID (formerly Azure AD) using MSAL for authentication and user management.</li>
+                    <li><i class="fas fa-mail-bulk"></i> <strong>Email Automation:</strong> Azure Logic Apps handle automated email workflows for order confirmations and approvals.</li>
+                    <li><i class="fas fa-users-cog"></i> <strong>Data Management:</strong> Employee data is retrieved via <strong>Microsoft Graph API</strong>, ensuring real-time synchronization with corporate directories.</li>
+                    <li><i class="fas fa-lock"></i> <strong>Security:</strong> Secure data handling through HTTPS endpoints and token-based authorization.</li>
+                </ul>
+
+                <h3>Order Categories:</h3>
+                <ul>
+                    <li><i class="fas fa-mobile-alt"></i> <strong>Smartphones:</strong> Orders for business smartphones, including new contracts and upgrades via Telekom partners.</li>
+                    <li><i class="fas fa-laptop"></i> <strong>Laptops & Accessories:</strong> Laptop and accessory orders facilitated through <strong>Nösse Datentechnik GmbH</strong>.</li>
+                    <li><i class="fas fa-clipboard-list"></i> <strong>Miscellaneous:</strong> Office supplies, eBooks, and other items not covered under standard categories.</li>
+                </ul>
+
+                <h3>How It Works:</h3>
+                <ul>
+                    <li><i class="fas fa-sign-in-alt"></i> Employees log in using their Microsoft 365 accounts via the O365 login page.</li>
+                    <li><i class="fas fa-clipboard-check"></i> Orders are submitted through intuitive forms, categorized under smartphones, laptops, or miscellaneous items.</li>
+                    <li><i class="fas fa-exchange-alt"></i> Orders are routed to managers for approval through Adaptive Cards and Azure Logic Apps.</li>
+                    <li><i class="fas fa-clipboard-list-check"></i> Upon approval, the procurement team places the order and employees are notified about the status.</li>
+                </ul>
+
+                <div class="cta-section">
+                    <p>
+                        <a href="index.html" class="btn btn-primary py-3 px-4">Back to Home</a>
+                        <a href="monethee-adventure.html" class="btn btn-white btn-outline-white py-3 px-4">Next Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
