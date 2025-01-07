@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>HBS Orgmanagement Handler</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="hbs-orgmanagement-handler.html">HBS Orgmanagement Handler</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span> Menu
+            </button>
+            
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="monethee-adventure.html" class="nav-link"><span>Next Project</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-details ftco-section">
+        <div class="container">
+            <div class="header-section">
+                <h1 class="animate__animated animate__fadeInDown">HBS Orgmanagement Handler</h1>
+                <p class="subheading">Event-Driven Organizational Management for RealCore Group</p>
+            </div>
+
+            <div class="content-section">
+                <p>
+                    <strong>HBS Orgmanagement Handler</strong> is an event-driven system designed to manage and distribute organizational data across multiple systems within the RealCore Group. The handler integrates with external services through a message bus system, enabling seamless communication between modules without exposing direct interfaces.
+                </p>
+                
+                <img src="images/project-6.jpg" style="width: 100%; height: auto; max-width: 1200px; display: block; margin: 0 auto;">
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li><i class="fas fa-project-diagram"></i> <strong>Event-Driven Architecture:</strong> Implements a pub-sub model using <strong>MassTransit</strong> and <strong>Azure Service Bus</strong> to handle inter-system communication.</li>
+                    <li><i class="fas fa-cogs"></i> <strong>Unit Data Synchronization:</strong> Retrieves organizational data for units of RealCore Group by querying <strong>Microsoft Graph API</strong> using unit or CEO IDs.</li>
+                    <li><i class="fas fa-database"></i> <strong>Data Persistence:</strong> Fetched data is securely stored in the handler’s database and distributed to other modules upon request.</li>
+                    <li><i class="fas fa-plug"></i> <strong>Seamless System Integration:</strong> Enables other systems to request unit hierarchy and employee information without requiring direct API exposure.</li>
+                    <li><i class="fas fa-server"></i> <strong>Dockerized Event Handler:</strong> A dedicated Docker container hosts the event listener, ensuring scalability and isolation of processes.</li>
+                    <li><i class="fas fa-arrows-alt-h"></i> <strong>Request-Response Model:</strong> Uses MassTransit’s request-response mechanism to fetch and return data synchronously over the bus.</li>
+                </ul>
+                
+                <h3>Technical Specifications:</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> <strong>Backend Technologies:</strong> .NET Core (C#) for event handler development and MassTransit for message-driven architecture.</li>
+                    <li><i class="fas fa-cloud"></i> <strong>Infrastructure:</strong> Hosted on <strong>Azure Service Bus</strong> with Docker containers managing distributed event handlers.</li>
+                    <li><i class="fas fa-database"></i> <strong>Data Integration:</strong> Microsoft Graph API fetches employee and unit data, which is saved and processed asynchronously.</li>
+                    <li><i class="fas fa-lock"></i> <strong>Security:</strong> All requests and responses are processed securely over HTTPS and authenticated through Azure Entra ID.</li>
+                    <li><i class="fas fa-tools"></i> <strong>Scalability:</strong> Docker containers enable easy scaling and deployment of multiple handlers as needed.</li>
+                    <li><i class="fas fa-network-wired"></i> <strong>Communication:</strong> Implements pub-sub patterns, ensuring distributed systems can subscribe to unit updates without direct dependencies.</li>
+                </ul>
+
+                <h3>How It Works:</h3>
+                <ul>
+                    <li><i class="fas fa-server"></i> The Orgmanagement Handler listens for incoming requests on Azure Service Bus.</li>
+                    <li><i class="fas fa-user-tie"></i> Requests are processed by querying Microsoft Graph API to retrieve relevant employee or unit data.</li>
+                    <li><i class="fas fa-share-square"></i> Retrieved data is saved in the handler database and forwarded to other modules using the pub-sub pattern.</li>
+                    <li><i class="fas fa-reply-all"></i> The handler synchronously responds to requesting systems through MassTransit’s request-response framework.</li>
+                </ul>
+
+                <h3>Event Categories:</h3>
+                <ul>
+                    <li><i class="fas fa-users"></i> <strong>Hierarchy Queries:</strong> Retrieve employee hierarchy based on unit or CEO ID.</li>
+                    <li><i class="fas fa-folder"></i> <strong>Unit Data Requests:</strong> Fetch comprehensive unit details and distribute them to subscribing systems.</li>
+                    <li><i class="fas fa-sync"></i> <strong>Real-Time Updates:</strong> Synchronize unit and employee data across multiple RealCore modules.</li>
+                </ul
+                
+                <div class="cta-section">
+                    <p>
+                        <a href="index.html" class="btn btn-primary py-3 px-4">Back to Home</a>
+                        <a href="monethee-adventure.html" class="btn btn-white btn-outline-white py-3 px-4">Next Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
