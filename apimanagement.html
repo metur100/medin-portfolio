@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Azure API Management - Platform & DevOps</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="apimanagement.html">API Management</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"
+                style="color: white; border-color: white;">
+                <span class="oi oi-menu" style="color: white;"></span>
+                <span style="color: white;">Menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="nrw-real-estate.html" class="nav-link"><span>Next Project</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-details ftco-section">
+        <div class="container">
+            <div class="header-section">
+                <h1 class="animate__animated animate__fadeInDown">Azure API Management – Platform & DevOps</h1>
+                <p class="subheading">Terraform-driven APIs, CI/CD pipelines, secure networking, policy governance &
+                    end-to-end observability</p>
+            </div>
+
+            <div class="content-section">
+                <p>
+                    This project delivers a production-grade <strong>Azure API Management (APIM)</strong> platform with
+                    fully automated
+                    infrastructure and API deployments. Responsibilities ranged from <em>infrastructure as code</em> and
+                    <em>policy management</em> to <em>network security</em>, <em>monitoring</em>, and
+                    <em>troubleshooting</em> of live APIs.
+                </p>
+
+                <!-- Hero/Image -->
+                <img src="images/project-apim.jpg" alt="Azure API Management Project Overview"
+                    style="width: 100%; height: auto; max-width: 1200px; display: block; margin: 0 auto; border-radius: 12px;">
+
+                <h3>Key Contributions</h3>
+                <ul>
+                    <li><i class="fas fa-code-branch"></i> <strong>Infrastructure as Code:</strong> Designed APIM
+                        instances, Products, backends, log integrations, and API artifacts with
+                        <strong>Terraform</strong> (modules & workspaces).</li>
+                    <li><i class="fas fa-gears"></i> <strong>CI/CD Pipelines:</strong> Built <strong>Azure
+                            DevOps</strong> pipelines to validate/plan/apply Terraform and deploy API revisions/versions
+                        from source.</li>
+                    <li><i class="fas fa-shield-halved"></i> <strong>Policy Governance:</strong> Auth, rate-limiting,
+                        header transforms, CORS, caching, JWT validation, IP filtering—managed via reusable policy
+                        templates.</li>
+                    <li><i class="fas fa-diagram-project"></i> <strong>Networking:</strong> Managed
+                        <strong>VNET-injected</strong> APIM within subnets, with <strong>route tables</strong>,
+                        <strong>NSGs</strong>, and <strong>Application Gateway/WAF</strong> in front.</li>
+                    <li><i class="fas fa-key"></i> <strong>Key Vault Integration:</strong> Centralized secrets,
+                        certificates, and named values; automated rotation and binding to APIM & gateway.</li>
+                    <li><i class="fas fa-magnifying-glass-chart"></i> <strong>Monitoring & KQL:</strong> Hooked APIM to
+                        <strong>Log Analytics</strong>/<strong>App Insights</strong>; authored KQL dashboards for
+                        latency, failures, and policy effects.</li>
+                    <li><i class="fas fa-screwdriver-wrench"></i> <strong>Troubleshooting:</strong> Resolved TLS/cert
+                        issues, backend connectivity, 500 errors, and policy misconfigurations with structured runbooks.
+                    </li>
+                </ul>
+
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li><i class="fas fa-code"></i> <strong>IaC:</strong> Terraform modules for APIM, Application
+                        Gateway, diagnostics, role assignments, and networking.</li>
+                    <li><i class="fas fa-server"></i> <strong>Pipelines:</strong> Multi-stage Azure DevOps (PR → Test →
+                        Prod) with approvals, artifacts, and release gates.</li>
+                    <li><i class="fas fa-layer-group"></i> <strong>APIM Artifacts:</strong> APIs, Revisions, Versions,
+                        Products, Backends, Named Values, Policy fragments.</li>
+                    <li><i class="fas fa-network-wired"></i> <strong>Networking:</strong> VNET/Subnet design, UDR route
+                        tables, NSGs, Private DNS, WAF policies on App Gateway.</li>
+                    <li><i class="fas fa-vial"></i> <strong>Quality:</strong> Linting & validation for Terraform, unit
+                        checks for policies, smoke tests against API revisions.</li>
+                </ul>
+
+                <h3>What I Managed Day-to-Day</h3>
+                <ul>
+                    <li><i class="fas fa-route"></i> <strong>Routing & Security:</strong> Ensured correct egress/ingress
+                        via UDRs; locked down subnets with NSGs; maintained WAF rules.</li>
+                    <li><i class="fas fa-file-shield"></i> <strong>Secrets & Certificates:</strong> Created/rotated Key
+                        Vault secrets; bound TLS certs to custom domains and backends.</li>
+                    <li><i class="fas fa-file-code"></i> <strong>Policies at Scale:</strong> Applied
+                        inbound/outbound/Backend policies by environment through parameterized fragments.</li>
+                    <li><i class="fas fa-bug-slash"></i> <strong>Diagnostics:</strong> Investigated failures using KQL,
+                        APIM trace, and App Gateway access logs.</li>
+                    <li><i class="fas fa-arrows-rotate"></i> <strong>Safe Releases:</strong> Used <em>revisions</em> +
+                        <em>canary routing</em> before promoting to a new <em>version</em>.</li>
+                </ul>
+
+                <h3>Troubleshooting Scenarios Solved</h3>
+                <ul>
+                    <li><i class="fas fa-lock"></i> <strong>TLS / Certificate Chain:</strong> Missing intermediates &
+                        expired certs—fixed via proper chain upload & auto-rotation from Key Vault.</li>
+                    <li><i class="fas fa-triangle-exclamation"></i> <strong>500s from Backends:</strong> Identified
+                        policy-induced header issues, auth token mismatches, and timeouts; added retries/circuit
+                        breakers.</li>
+                    <li><i class="fas fa-shuffle"></i> <strong>Routing Anomalies:</strong> Corrected UDR next hops and
+                        NSG rules to restore private connectivity.</li>
+                    <li><i class="fas fa-hand"></i> <strong>CORS & Auth:</strong> Unified CORS in policies; standardized
+                        OAuth/JWT validation and audience/issuer checks.</li>
+                </ul>
+
+                <h3>Monitoring & Observability</h3>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> <strong>Dashboards:</strong> Requests, latency, 4xx/5xx, cache
+                        hit ratio, throttling events, and backend dependency health.</li>
+                    <li><i class="fas fa-database"></i> <strong>Logging:</strong> Centralized APIM & App Gateway logs to
+                        Log Analytics; linked to alerts and action groups.</li>
+                    <li><i class="fas fa-bell"></i> <strong>Alerts:</strong> SLO-based thresholds (p95 latency, error
+                        rate) with on-call routing.</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <ul>
+                    <li><i class="fas fa-rocket"></i> <strong>Faster Delivery:</strong> Reproducible environments and
+                        one-click pipeline releases.</li>
+                    <li><i class="fas fa-lock-keyhole"></i> <strong>Better Security:</strong> Private networking, WAF,
+                        and policy standardization.</li>
+                    <li><i class="fas fa-gauge-high"></i> <strong>Higher Reliability:</strong> Proactive alerts and
+                        data-driven troubleshooting reduced MTTR.</li>
+                </ul>
+
+                <div class="cta-section">
+                    <p>
+                        <a href="index.html" class="btn btn-primary py-3 px-4">Back to Home</a>
+                        <a href="nrw-real-estate.html" class="btn btn-white btn-outline-white py-3 px-4">Next
+                            Project</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>. All rights reserved.
+                    </p>
+                    <p>
+                        <a href="privacy-policy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
